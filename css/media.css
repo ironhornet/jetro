@@ -1,0 +1,101 @@
+@media(max-width: 955px){
+    .header__menu-btn{
+        display: block;
+    }
+    .header__menu ul{
+        display: none;
+    }
+    .slider__item{
+        max-width: 100%;
+    }
+    .str{
+        display: none;
+    }
+    .stip-l ,.stip-r{
+        display: none;
+    }
+    
+    .header__logo a{
+        margin-left: 10px;
+    }
+    .header__menu-btn{
+        margin-right: 10px;
+    }
+    .header__menu ul {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 75px;
+        width: 100%;
+        display: none;
+        background-color: #fff;
+        z-index: 2;
+        border-bottom: 5px solid #e8603c;
+
+    }
+     .header__inner .header__menu li {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+    .header__menu li{
+        border-bottom: 1px solid #e7e7e7;
+        padding: 10px 0;
+    }
+    .works__item-inner{
+         flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .items__inner{
+        margin: 0 15px;
+    }
+    .works__title{
+        padding-left: 15px;
+        white-space: nowrap;
+    }
+    .footer.footer{
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 851px){
+    .item__1-2{
+    margin-right: 15px;
+}
+.footer__inner-box:nth-child(2){
+    margin-right: 15px;
+}
+}
+
+@media(max-width: 681px){
+    .items__inner{
+        /* flex-wrap: wrap;    */
+        /* если оставляю врап то элементы начинают передвигаться в колону по одному , по мере уеньшения дисплея 
+         */
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* если оставляю флекс дирекшн , то эелементы стали в колоны как мне надо ,но не работает джастифи контент 
+        элементы все стоят по левому борту  . Т.е мне нужжна колона , но которая стоит по центру */
+    }
+    .footer__inner{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__items-text-about{
+    position: relative;
+    left: 21px;
+    }
+}
+
+
+
+@media (min-width: 955px) {
+    .header__menu>ul {
+        display: block !important;
+    }
+}

@@ -1,0 +1,352 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    background-image: url(../images/bg.png);
+}
+a{
+    color:black;
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline-block;
+}
+.container{
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+}
+h1,h2,h3{
+    margin: 0;
+}
+/* .header{
+    background-image: url(../images/bg.png);
+} */
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+}
+.header__logo a{
+    
+    color: #f3af9d;
+    font-size: 36px;
+    font-family: 'Bebas neue', sans-serif;
+    /* font-weight: 400; Хз надо ли это тут ? В уроке мы писали это значение
+    но кажется только потому что шрифт имел разные размеры, а этот только 400 и все  */
+}
+.header__logo a span{
+    color: #e8603c;
+}
+.header__menu{
+    margin-right: 1px;
+    display: flex;
+}
+
+.header__menu-btn{
+    width: 30px;
+    display: none;
+}
+
+.header__menu-row{
+    width: 100%;
+    background-color: #000;
+    height: 4px;
+    margin-bottom: 4px;
+}
+.header__menu li + li{
+    margin-left: 28px;
+}
+li:first-child a{    
+    /* Выяснить почему это так рабоатет */
+    color: #e8603c;
+}
+.header__menu a{
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+    color: #b9b9b9;
+}
+
+
+.slider__item{
+width: 100%;
+min-height: 400px;
+background-position: top center;
+background-size: cover;
+background-repeat: no-repeat;
+margin-bottom: 17px;
+
+}
+.slider__nav-thumbs{
+    width: 140px;
+    height: 120px;
+    background-position: top center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.slider__nav .slick-track div + div{
+    margin-left: 20px;
+}
+.slider__nav .slick-slide{
+    max-width: 140px;
+}
+/* .slider__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+
+.slider__strip-l{
+    height: 60px;
+    width: 200px;
+    background-color: rgb(163, 19, 19);
+}
+.slick-list{
+    z-index: 0;
+}
+.slick-prev{
+    width: 36px;
+    height: 52px;
+    left: 27px;
+    z-index: 1;
+}
+.slick-next{
+    width: 36px;
+    height: 52px;
+    right: 27px;
+    
+}
+.slick-arrow{
+    top: calc(50% - 17px);
+    transform: translate(0, -50%);
+}
+.slick-arrow:before{
+    content: none;
+}
+.my__prev-arrow{
+    background-image: url(../images/prev.png);
+    width: 36px;
+    height: 52px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+}
+.my__next-arrow{
+    background-image: url(../images/next.png);
+    width: 36px;
+    height: 52px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.main__block{
+    display: flex;
+    justify-self: space-between;
+}
+.strip-l{
+    margin-right: 10px;
+}
+.strip-r{
+    margin-left: 9px;
+}
+
+.str{
+    width: calc((100%-67%)/2);
+    background-color: #f3af9d; 
+    height: 60px;  
+}
+
+/* .slick-slide img{
+    margin: 0 auto;
+} */
+    
+/* .slick-list.draggable {
+    margin-left: -10px!important;
+    margin-right: -10px!important;
+} */
+.items__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+}
+.item{
+    width: 280px;
+    margin-top: 40px;
+}
+.item__title{
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #e8663c;
+    align-items: center;
+}
+.item__icon{
+    float: left;
+    width: 41px;
+    height: 40px;
+    margin-right: 22px;
+
+}
+.item__link {
+    width: 56px;
+    height: 31px;
+    background-color: #e8663c;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.item__text{
+    font-family: 'Helvetica',sans-serif;
+    font-size: 12px;
+    padding-bottom: 22px;
+}
+.item__link a{
+    font-family: 'Bebas', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+.works__strip{
+    background-image: url(../images/strip.png);
+    width: 807px;
+    height: 19px;
+    background-color: rgb(255, 255, 255);
+}
+.works__title-wraper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+.works__title{
+    color: #e8603c;
+    font-family: 'Bebas neue', cursive;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.works__item-inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+.works__item-avatar{
+    width: 220px;
+    height: 184px;
+}
+.works__item-text{
+    border-left: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+    border-bottom: 1px solid #b9b9b9;
+    padding-left: 13px;
+    padding-bottom: 14px;
+}
+.works__item-text h2{
+    padding: 13px 0 8px;
+    font-family: 'Bebas neue', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #b9b9b9;
+}
+.works__item-text span{
+    color: #e8663c;
+    font-family: 'Bebas neue', cursive;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stip-r{
+    background-color: #f2b19c;
+    width: calc((100% - 940px)/2);
+    /* height:inherit; */
+    margin-left: 10px;
+}
+    .stip-l{
+    background-color: #f2b19c;
+    width: calc((100% - 940px)/2);
+    /* height: inherit; */
+    margin-right: 10px;
+}
+.footer__inner{
+    background-color: #e8663c;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 36px;
+    padding-right: 41px;
+    padding-bottom: 24px;
+}
+.footer__inner-box{
+    width: calc(100% - 211px/3);
+}
+/* .footer__items-text{
+    width: 260px;
+    height: 128px;
+} */
+.footer__items-title h2{
+ color: #ffffff;
+ font-family: 'Bebas neue', cursive;
+font-size: 20px;
+font-weight: 400;
+margin-top: 38px;
+margin-bottom: 27px;
+}
+.footer__inner p{
+    color: #ffffff;
+font-family: "Helvetica Neue";
+font-size: 12px;
+font-weight: 400;
+}
+.footer__inner span{
+    opacity: 0.5;
+}
+/* .footer__items-text-about{
+    margin: 0 64px 50px 35px;
+    width: 252px;
+} */
+/* .footer__inner-social{
+    margin-bottom: 44px;
+    position: relative;
+    top: -20px;
+} */
+.footer__items-text-about{
+    margin-right: 64px;
+}
+.footer__items-text-contact{
+    margin-bottom: 21px;
+}
+
+.footer__inner-box:nth-child(2){
+    margin-right: 71px;
+}
+/* .footer__items-text:last-child{
+    padding-right: 70px;
+    
+} */
+/* .footer__items-text-contact{
+    padding-right: 70px;
+
+} */
